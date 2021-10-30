@@ -20,6 +20,7 @@ There seems to be an issue with total price sometimes. On some order details, th
 
 ### Dev Notes / Response
 
+Issue should be solved and is only giving number to two decimal places. It rounds up if need. If would would like to not round or different rounding method, please let me know.
 
 ---
 
