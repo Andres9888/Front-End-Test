@@ -5,6 +5,15 @@ import dayjs from "dayjs"
 function OrdersTable({ data, actions }) {
   const { deleteOrder, selectOrder } = actions
 
+  const handleViewDetail = (order) => {
+    selectOrder(order)
+  }
+
+  const handleDeleteOrder = (order) => {
+    selectOrder(order)
+    deleteOrder()
+  }
+
   return (
     <div>
       <h1>Customer Orders</h1>
@@ -25,17 +34,14 @@ function OrdersTable({ data, actions }) {
                 <button
                   type="button"
                   className="detailButton"
-                  onClick={() => selectOrder(order)}
+                  onClick={() => handleViewDetail(order)}
                 >
                   Details
                 </button>
                 <button
                   type="button"
                   className="deleteButton"
-                  onClick={() => {
-                    selectOrder(order)
-                    deleteOrder()
-                  }}
+                  onClick={() => handleDeleteOrder(order)}
                 >
                   Delete
                 </button>
