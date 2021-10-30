@@ -20,7 +20,7 @@ function OrdersTable({ data, actions }) {
           {data.map((order) => (
             <tr key={order.id}>
               <td>{order.customerName}</td>
-              <td>{dayjs(order.createdOn).format("MMMM DD, YYYY h:MM A")}</td>
+              <td>{dayjs(order.createdOn).format("MMMM DD, YYYY - h:MM A")}</td>
               <td>
                 <button
                   type="button"
