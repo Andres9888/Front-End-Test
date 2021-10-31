@@ -9,18 +9,18 @@ Additionally, time should display in (H)H:MM format, but currently 12:07 display
 
 ### Dev Notes / Response
 
-Should be fixed the format looks like this July 21, 2021 6:07 PM as an example.	You seem to wanted (H)H:MM format. What I have is h:MM. I tried the format listed and what I got was this (18)18:07 which I don't think you want. We can recheck this to make sure it's correct.  
+Should be fixed the format looks like this July 21, 2021 - 6:07 PM as an example.	You seem to want (H)H:MM format. What I have is h:MM. I tried the format you listed and what I got was this (18)18:07 which I don't think you want. We can recheck this to make sure it's correct.  
 
 ---
 
-I saw that there was a format date function. You might have wanted me to use it and fix it but I went with an import of a date library instead and I will give my reason. My reason was more real world based and what I would have really done in real life. So there are date libraries that are already battled tested and proven to work. I choose dayjs cause it was simply but if we need more functionality we can date-fns. This also removes code making it more readable and quicker to implement. Also, date formats are pretty universal so I don't think we would need something more custom.
+I saw that there was a format date function. You might have wanted me to use it and fix it but I went with an import of a date library instead and I will give my reason. My reason was more real world based and what I would have really done in real life. So there are date libraries that are already battled tested and proven to work. I choose dayjs cause it was simply but if we need more functionality we can date-fns. This also removes some code making it more readable and quicker to implement. Also, date formats are pretty universal so I don't think we would need something more custom.
 ## Customer Order Details
 ### QA Notes
 There seems to be an issue with total price sometimes. On some order details, the total price is displaying values after the penny.
 
 ### Dev Notes / Response
 
-Issue should be solved and is only giving number to two decimal places. It rounds up if need. If would would like to not round or different rounding method, please let me know.
+Issue should be solved and is only giving number to two decimal places. It rounds up if need. If you would would like to not round or different rounding method, please let me know.
 
 ---
 
@@ -31,6 +31,7 @@ I'm currently unable to delete a customer order. Every time I click the "Delete"
 
 ### Dev Notes / Response
 
+Issue should be solved.
 
 ---
 

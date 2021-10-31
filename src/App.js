@@ -1,8 +1,6 @@
-import React from 'react';
-import Orders from '../components/Orders';
+import React from "react"
+import Orders from "../components/Orders"
 
-const App = () => (
-    <Orders />
-)
+const App = () => <Orders />
 
 export default App
